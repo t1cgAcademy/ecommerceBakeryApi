@@ -21,6 +21,7 @@ Should see a console output similar to:
 2018-10-11T00:17:50.296-0400	imported 6 documents
 ```
 Once thats set start the api!
+- `npm i`
 - `npm start`
 
 ### Package Documentation
