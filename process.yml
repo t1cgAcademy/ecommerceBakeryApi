@@ -1,0 +1,8 @@
+apps:
+  - script   : 'app.js'
+    name: 'local'
+    watch: true
+    exec_mode: 'fork'
+    instances: 1
+    interpreter: './node_modules/.bin/babel-node'
+log_type: "json"
