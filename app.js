@@ -3,6 +3,7 @@ import bodyParse from 'body-parser';
 import cors from 'cors';
 import contact from './routes/contact';
 import products from './routes/products';
+import payment from './routes/payment';
 import './mongo/mongo.js';
 import './models/index.js';
 
@@ -22,6 +23,10 @@ app.use('/api/contact', contact);
 // When a request to http://localhost:3001/api/products is
 // sent, use the exported module from ./routes/products.js file
 app.use('/api/products', products);
+
+// When a request to http://localhost:3001/api/products is
+// sent, use the exported module from ./routes/products.js file
+app.use('/api/payment', payment);
 
 // On start of api server, set listening for port 3001
 // The api daemon is now listening for all http trafic
