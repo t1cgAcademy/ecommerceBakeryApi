@@ -11,7 +11,7 @@ import configureStripe from 'stripe';
 const router = express.Router();
 
 const payment = (req, res) => {
-    const stripe = configureStripe('sk_test_mcKF3wluHNVJxsu5D7FwJ8i1');
+    const stripe = configureStripe('your_api_key_here');
     console.log('Created Card Making Charge');
     stripe.charges.create({
       amount: req.body.amount,
