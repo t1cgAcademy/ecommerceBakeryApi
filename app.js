@@ -16,6 +16,8 @@ app.use(cors());
 // Have api automatically parse request bodies to json
 app.use(bodyParse.json());
 
+app.get('/hello', (req, res) => res.json({ msg: 'Hello World' }));
+
 // When a request to http://localhost:3001/api/contact is
 // sent, use the exported module from ./routes/contact.js file
 app.use('/api/contact', contact);
